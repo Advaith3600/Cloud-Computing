@@ -1,0 +1,14 @@
+.cloud {
+	background: url('./../images/cloud.svg') no-repeat center;
+	background-size: contain;
+	width: 30px;
+	height: 30px;
+}
+
+.bg-blue {
+	background: $light-blue;
+}
+
+.border-spacing-0 {
+	border-spacing: 0;
+}

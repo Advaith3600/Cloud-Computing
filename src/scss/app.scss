@@ -1,5 +1,22 @@
+// predifined vaiable
+@import './variables';
+// importing fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,900&display=swap');
+
+// importing tailwindcss
 @tailwind base;
 
 @tailwind components;
 
 @tailwind utilities;
+
+// global css
+body {
+	color: #333;
+	font-family: 'Nunito', 'Helvetica Neue', sans-serif;
+	font-weight: 400;
+}
+
+// custom sass files for each section
+@import './header';
+@import './content';
