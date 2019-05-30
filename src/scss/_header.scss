@@ -16,18 +16,24 @@
 
 // site navigation
 nav {
-	.site-logo {
-		background: url('./../images/logo.svg') center no-repeat;
+	background: rgba(255, 255, 255, .9);
+
+	.world-skills-india { background: url('./../images/logo.png') center no-repeat; }
+	.nasscom { background: url('./../images/nasscom.png') center no-repeat; }
+	.skill-india { background: url('./../images/skill-india.png') center no-repeat; }
+	.nsdc { background: url('./../images/nsdc.png') center no-repeat; }
+
+	.world-skills-india, .nasscom, .skill-india, .nsdc {
 		background-size: contain;
-		width: 120px;
-		height: 72px;
+		width: 100px;
+		height: 60px;
 	}
 }
 
 // main header
 .main-header {
-	height: 600px;
-	background: url('./../images/header-background.jpg') center no-repeat;
+	height: 700px;
+	background: url('./../images/header-background.jpeg') center no-repeat;
 	background-size: cover;
 
 	.lightbox {
@@ -40,9 +46,10 @@ nav {
 		bottom: 20px;
 		left: 50%;
 		transform: translateX(-50%);
-		background: url('./../images/chevrons-down.svg') center no-repeat;
-		background-size: contain;
-		width: 40px;
-		height: 40px;
+		
+		svg {
+			width: 40px;
+			height: 40px;
+		}
 	}
 }

@@ -1,14 +1,68 @@
 .cloud {
-	background: url('./../images/cloud.svg') no-repeat center;
-	background-size: contain;
-	width: 30px;
-	height: 30px;
+	svg {
+		width: 30px;
+		height: 30px;
+		fill: $light-blue;
+		stroke: $light-blue;
+	}
+
+	&.white svg {
+		fill: white;
+		stroke: white;
+	}
 }
 
 .bg-blue {
 	background: $light-blue;
 }
 
+.grid-header {
+	display: grid;
+	grid-template-columns: 40px 1fr;
+	grid-gap: 0.6rem;
+}
+
+.grid-2 {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+}
+
+@media screen and (min-width: 768px) {
+	.grid-2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.bg-gradient {
+	background: linear-gradient(to bottom, $light-blue, $blue);
+}
+
+.world_skills_background {
+	background: url('./../images/World_skills.jpg') center no-repeat;
+	background-size: cover;
+}
+
+.future_skills {
+	background: url('./../images/future_skills.png') center no-repeat;
+	background-size: cover;
+}
+
+.list {
+	padding: 0.3rem;
+	border-radius: 50px;
+	background: white;
+}
+
+.cloud_computing {
+	background: url('./../images/cloud_computing.jpg') center no-repeat;
+	background-size: cover;
+}
+
 .border-spacing-0 {
 	border-spacing: 0;
+}
+
+.social_link a svg {
+	width: 20px;
+	height: 20px;
 }

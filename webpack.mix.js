@@ -14,6 +14,7 @@ mix.config.publicPath = 'dist';
 
 mix
 	.copy('src/index.html', 'dist/') // copying the index.html file
+	.copy('src/files/', 'dist/files/') // copying downloadable files
 	.js('src/js/app.js', 'dist/js/') // compiling the javascript file
 	.sass('src/scss/app.scss', 'dist/css/') // compiling the sass file into css file
   	.options({
