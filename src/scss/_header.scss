@@ -19,20 +19,14 @@ nav {
 	background: rgba(255, 255, 255, .9);
 
 	.world-skills-india { background: url('./../images/logo.png') center no-repeat; }
-	.nasscom { background: url('./../images/nasscom.png') center no-repeat; }
 	.skill-india { background: url('./../images/skill-india.png') center no-repeat; }
 	.nsdc { background: url('./../images/nsdc.png') center no-repeat; }
-
-	.world-skills-india, .nasscom, .skill-india, .nsdc {
-		background-size: contain;
-		width: 100px;
-		height: 60px;
-	}
 }
 
 // main header
+/* purgecss start ignore */
 .main-header {
-	height: 700px;
+	height: calc(400px + 30vh);
 	background: url('./../images/header-background.jpeg') center no-repeat;
 	background-size: cover;
 
@@ -53,3 +47,4 @@ nav {
 		}
 	}
 }
+/* purgecss end ignore */

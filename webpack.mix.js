@@ -18,6 +18,7 @@ mix
 	.js('src/js/app.js', 'dist/js/') // compiling the javascript file
 	.sass('src/scss/app.scss', 'dist/css/') // compiling the sass file into css file
   	.options({
+  		processCssUrls: false,
     	postCss: [ tailwindcss('./tailwind.config.js') ]
   	}) // configuring tailwindcss
 	.browserSync({

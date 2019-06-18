@@ -1,3 +1,4 @@
+/* purgecss start ignore */
 .cloud {
 	svg {
 		width: 30px;
@@ -11,6 +12,7 @@
 		stroke: white;
 	}
 }
+/* purgecss end ignore */
 
 .bg-blue {
 	background: $light-blue;
@@ -48,6 +50,7 @@
 }
 
 .list {
+	display: flex;
 	padding: 0.3rem;
 	border-radius: 50px;
 	background: white;

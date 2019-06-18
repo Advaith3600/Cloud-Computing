@@ -6,7 +6,7 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<link rel="stylesheet" href="/css/app.css" />
+		<link rel="stylesheet" href="css/app.css" />
 	</head>
 	<body>
 		<!-- top section to display colors -->
@@ -18,27 +18,19 @@
 			<span></span>
 			<span></span>
 		</div>
-
-		<!-- navigation bar of the webpage -->
-		<nav class="absolute top-0 left-0 w-full z-10">
-			<div class="container mx-auto px-4 py-2 flex justify-between items-center">
-				<div class="flex">
-					<div class="world-skills-india"></div>
-					<div class="nasscom"></div>
-				</div>
-
-				<div class="flex">
-					<div class="skill-india"></div>
-					<div class="nsdc"></div>
-				</div>
-			</div>
-		</nav>
 	
 		<!-- main header section of the page -->
-		<header class="w-full main-header">
+		<header class="w-full main-header relative">
+			<!-- navigation bar of the webpage -->
+			<nav class="absolute top-0 left-0 w-full z-10">
+				<div class="container mx-auto px-4 py-2">
+					<img src="images/nasscom.png" alt="Nasscom" width="100" height="60" />
+				</div>
+			</nav>
+
 			<div class="lightbox">
 				<div class="text-white flex flex-col justify-center items-center h-full relative coontainer mx-auto px-4">
-					<div class="font-black uppercase text-5xl text-center max-w-3xl">
+					<div class="font-black uppercase text-3xl text-center max-w-3xl sm:text-5xl">
 						International Cloud Computing Challenge 2019
 					</div>
 
@@ -170,37 +162,56 @@
 			</div>
 		</div>
 
-		<!-- get_involved section -->
-		<div id="get_involved" class="bg-gray-100">
-			<div class="container mx-auto py-16 px-4">
+		<!-- our partner section -->
+		<div class="bg-gray-100">
+			<div class="container mx-auto px-4 py-16">
 				<div class="flex items-center">
 					<div class="cloud">
 						<i data-feather="cloud"></i>
 					</div>
-					<div class="ml-4 font-normal text-4xl">
-						Get Involved
+
+					<div class="text-4xl font-normal ml-4">
+						Our Partners
 					</div>
 				</div>
 
-				<table class="mt-10 text-left border border-gray-400 w-full rounded border-separate overflow-hidden border-spacing-0">
-					<tr>
-						<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Likely Dates</th>
-						<td class="border-b border-gray-400 px-4 py-3 bg-white">July 1-7, 2019</td>
-					</tr>
-					<tr>
-						<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Location</th>
-						<td class="border-b border-gray-400 px-4 py-3 bg-white">New Delhi</td>
-					</tr>
-					<tr>
-						<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Name of the competition</th>
-						<td class="border-b border-gray-400 px-4 py-3 bg-white">International Cloud Computing Challenge 2019</td>
-					</tr>
-					<tr>
-						<th class="text-white bg-blue px-4 py-3">Format</th>
-						<td class="px-4 py-3 bg-white">Worldskills (competition to be of 3 days)</td>
-					</tr>
-				</table>
+				<div class="mt-8 flex justify-center flex-wrap">
+					<img src="images/logo.png" class="h-32 mx-6 my-2" alt="Logo" />
+					<img src="images/skill-india.png" class="h-32 mx-6 my-2" alt="Skill India" />
+					<img src="images/nsdc.png" class="h-32 mx-6 my-2" alt="NSDC" />
+				</div>
 			</div>
+		</div>
+
+		<!-- get_involved section -->
+		<div class="container mx-auto py-16 px-4" id="get_involved">
+			<div class="flex items-center">
+				<div class="cloud">
+					<i data-feather="cloud"></i>
+				</div>
+				<div class="ml-4 font-normal text-4xl">
+					Get Involved
+				</div>
+			</div>
+
+			<table class="mt-10 text-left border border-gray-400 w-full rounded border-separate overflow-hidden border-spacing-0">
+				<tr>
+					<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Likely Dates</th>
+					<td class="border-b border-gray-400 px-4 py-3 bg-white">July 1-6, 2019</td>
+				</tr>
+				<tr>
+					<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Location</th>
+					<td class="border-b border-gray-400 px-4 py-3 bg-white">New Delhi</td>
+				</tr>
+				<tr>
+					<th class="border-b border-gray-400 text-white bg-blue px-4 py-3">Name of the competition</th>
+					<td class="border-b border-gray-400 px-4 py-3 bg-white">International Cloud Computing Challenge 2019</td>
+				</tr>
+				<tr>
+					<th class="text-white bg-blue px-4 py-3">Format</th>
+					<td class="px-4 py-3 bg-white">Worldskills (competition to be of 3 days)</td>
+				</tr>
+			</table>
 		</div>
 
 		<!-- footer of the page -->
@@ -235,6 +246,6 @@
 			</div>
 		</footer>
 
-		<script src="/js/app.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
